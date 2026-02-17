@@ -1,0 +1,14 @@
+backup
+
+*.log*
+
+home/.config/fish/fish_variables
+
+home/.config/lazygit/state.yml
+
+home/.config/nvim/sessions
+home/.config/nvim/workspaces.json
+
+*.DS_Store
+home/.config/nvim/lazy-lock.json
+home/.config/nvim/lazyvim.json

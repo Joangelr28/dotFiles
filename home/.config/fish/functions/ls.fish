@@ -1,5 +1,5 @@
 function ls
-    command eza --group-directories-first --icons --all
+    command eza --group-directories-first --icons --all -T --ignore-glob=".git|node_modules" -L 1
 end
 
 function lsi
