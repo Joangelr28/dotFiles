@@ -1,0 +1,26 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format='$character$all'
+
+add_newline = false
+
+[custom]
+disabled = false
+
+[line_break]
+disabled = true
+
+[package]
+disabled = true
+
+[character]
+success_symbol = '[ ](bold #cba6f7)[ ](bold #f2cdcd)[ ](bold #b4befe)[ ](bold #a6e3a1)'
+error_symbol = '[ ](bold #cba6f7)[ ](bold #f2cdcd)[ ](bold #b4befe)[ ](bold #f38ba8)'
+
+[git_branch]
+symbol = ' '
+
+[git_status]
+modified = ''
+untracked = ''
+staged = ''

@@ -1,0 +1,58 @@
+# Réplica de AeroSpace en yabai/skhd
+# Hyper = cmd + ctrl + shift + alt
+
+# === FOCUS Y MOVIMIENTO (igual que AeroSpace) ===
+alt - h : /opt/homebrew/bin/yabai -m window --focus west
+alt - j : /opt/homebrew/bin/yabai -m window --focus south
+alt - k : /opt/homebrew/bin/yabai -m window --focus north
+alt - l : /opt/homebrew/bin/yabai -m window --focus east
+
+alt - shift - h : /opt/homebrew/bin/yabai -m window --warp west
+alt - shift - j : /opt/homebrew/bin/yabai -m window --warp south
+alt - shift - k : /opt/homebrew/bin/yabai -m window --warp north
+alt - shift - l : /opt/homebrew/bin/yabai -m window --warp east
+
+# === LAYOUT / FULLSCREEN (AeroSpace: alt-ctrl-f, alt-ctrl-shift-f, alt-slash, alt-comma) ===
+alt - ctrl - f : /opt/homebrew/bin/yabai -m space --layout float
+alt - ctrl - shift - f : /opt/homebrew/bin/yabai -m window --toggle zoom-fullscreen
+alt - slash : /opt/homebrew/bin/yabai -m space --layout bsp
+alt - comma : /opt/homebrew/bin/yabai -m space --layout stack
+
+# === RESIZE (AeroSpace: alt-shift-minus, alt-shift-equal) ===
+alt - shift - minus : /opt/homebrew/bin/yabai -m window --resize left:50:0; /opt/homebrew/bin/yabai -m window --resize right:-50:0
+alt - shift - equal : /opt/homebrew/bin/yabai -m window --resize left:-50:0; /opt/homebrew/bin/yabai -m window --resize right:50:0
+
+# === HYPER + N: FOCUS WORKSPACE (AeroSpace: cmd-ctrl-shift-alt-0..9) ===
+# 0=default(space10) | 1=terminal | 2=code | 3=browser | 4=social | 5=work-chats | 6=work-items | 9=documents
+cmd + ctrl + alt + shift - 0 : /opt/homebrew/bin/yabai -m space --focus 10
+cmd + ctrl + alt + shift - 1 : /opt/homebrew/bin/yabai -m space --focus 1
+cmd + ctrl + alt + shift - 2 : /opt/homebrew/bin/yabai -m space --focus 2
+cmd + ctrl + alt + shift - 3 : /opt/homebrew/bin/yabai -m space --focus 3
+cmd + ctrl + alt + shift - 4 : /opt/homebrew/bin/yabai -m space --focus 4
+cmd + ctrl + alt + shift - 5 : /opt/homebrew/bin/yabai -m space --focus 5
+cmd + ctrl + alt + shift - 6 : /opt/homebrew/bin/yabai -m space --focus 6
+cmd + ctrl + alt + shift - 9 : /opt/homebrew/bin/yabai -m space --focus 9
+
+# === ALT+SHIFT+N: MOVER VENTANA A WORKSPACE (AeroSpace: alt-shift-0..9) ===
+alt - shift - 0 : /opt/homebrew/bin/yabai -m window --space 10; /opt/homebrew/bin/yabai -m space --focus 10
+alt - shift - 1 : /opt/homebrew/bin/yabai -m window --space 1; /opt/homebrew/bin/yabai -m space --focus 1
+alt - shift - 2 : /opt/homebrew/bin/yabai -m window --space 2; /opt/homebrew/bin/yabai -m space --focus 2
+alt - shift - 3 : /opt/homebrew/bin/yabai -m window --space 3; /opt/homebrew/bin/yabai -m space --focus 3
+alt - shift - 4 : /opt/homebrew/bin/yabai -m window --space 4; /opt/homebrew/bin/yabai -m space --focus 4
+alt - shift - 5 : /opt/homebrew/bin/yabai -m window --space 5; /opt/homebrew/bin/yabai -m space --focus 5
+alt - shift - 6 : /opt/homebrew/bin/yabai -m window --space 6; /opt/homebrew/bin/yabai -m space --focus 6
+alt - shift - 9 : /opt/homebrew/bin/yabai -m window --space 9; /opt/homebrew/bin/yabai -m space --focus 9
+
+# === CTRL+ALT+N: SUMMON WORKSPACE (AeroSpace: ctrl-alt-0..9) ===
+ctrl + alt - 0 : /opt/homebrew/bin/yabai -m space --focus 10
+ctrl + alt - 1 : /opt/homebrew/bin/yabai -m space --focus 1
+ctrl + alt - 2 : /opt/homebrew/bin/yabai -m space --focus 2
+ctrl + alt - 3 : /opt/homebrew/bin/yabai -m space --focus 3
+ctrl + alt - 4 : /opt/homebrew/bin/yabai -m space --focus 4
+ctrl + alt - 5 : /opt/homebrew/bin/yabai -m space --focus 5
+ctrl + alt - 6 : /opt/homebrew/bin/yabai -m space --focus 6
+ctrl + alt - 9 : /opt/homebrew/bin/yabai -m space --focus 9
+
+# === OTROS (AeroSpace: alt-tab, alt-shift-tab) ===
+alt - tab : /opt/homebrew/bin/yabai -m space --focus recent
+alt - shift - tab : /opt/homebrew/bin/yabai -m space --display next
